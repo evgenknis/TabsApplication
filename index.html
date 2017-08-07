@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services/dataService.js"></script>
+    <script src="js/services/itemsService.js"></script>
+    <script src="js/controllers/dataController.js"></script>
+    <script src="js/controllers/tabsController.js"></script>
+    <script src="js/components/tabControl.js"></script>
+    <script src="js/components/tabsControl.js"></script>
+</head>
+
+<body ng-app="tabsApp">
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Tabs Application</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="list">List</a></li>
+        <li><a ui-sref="details">Details</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div ui-view></div>
+</div>
+
+</body>
+</html>

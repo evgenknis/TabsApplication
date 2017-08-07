@@ -1,0 +1,21 @@
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+    <tr>
+        <td></td>
+        <td>Label</td>
+        <td>Content</td>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr ng-repeat="item in items">
+        <td class="text-center">
+            <input type="checkbox" ng-model="item.checked"/>
+        </td>
+
+        <td>{{ item.label }}</td>
+        <td>{{ item.content }}</td>
+    </tr>
+
+    </tbody>
+</table>

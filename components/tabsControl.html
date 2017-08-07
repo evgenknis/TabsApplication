@@ -1,0 +1,10 @@
+<ul class="nav nav-tabs">
+    <li ng-repeat="tab in tabs">
+        <a data-toggle="tab" data-target="#tab{{$index}}">{{ tab.label }}</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <tab-control ng-repeat="tab in tabs" id="tab{{$index}}" class="tab-pane">
+        {{tab.content}}
+    </tab-control>
+</div>
